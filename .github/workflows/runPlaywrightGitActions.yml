@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: install playwright
       run: npm init playwright@latest
-    # - name: install browsers
-    #   run: 
+    - name: install browsers
+      run: npx playwright install
     - name: run test
       run: npx playwright test
