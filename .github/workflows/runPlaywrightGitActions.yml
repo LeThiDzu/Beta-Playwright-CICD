@@ -13,8 +13,6 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: install playwright
-      run: npm init playwright@latest
-    - name: install browsers
-      run: npx playwright install
+      run: npm install playwright
     - name: run test
       run: npx playwright test
