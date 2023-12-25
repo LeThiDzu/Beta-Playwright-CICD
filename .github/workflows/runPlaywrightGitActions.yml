@@ -10,7 +10,7 @@ on:
 jobs:
   # This workflow contains a single job called "greet"
   run-test:
-    runs-on: macos-latest
+    runs-on: windows-latest
     steps:
     - name: install playwright
       run: npm install playwright
