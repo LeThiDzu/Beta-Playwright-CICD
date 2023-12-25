@@ -1,0 +1,20 @@
+# This is a basic workflow that is manually triggered
+
+name: Beta manual workflow
+
+on:
+  schedule:
+    - cron: "0 20 * * *"
+  workflow_dispatch:
+
+jobs:
+  # This workflow contains a single job called "greet"
+  run-test:
+    runs-on: macos-latest
+    steps:
+    - name: install playwright
+      run: npm init playwright@latest
+    # - name: install browsers
+    #   run: 
+    - name: run test
+      run: npx playwright test
